@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Edad</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+       
+    </style>
+</head>
+<body>
+    <div class="container d-flex justify-content-center align-items-center min-vh-100">
+        <div class="card p-4 shadow-lg border-light" style="max-width: 500px;">
+            <h1 class="card-title text-center mb-4">Calculadora de Edad</h1>
+            <p class="card-text text-center mb-4">Hecho para: Nicole Violeta</p>
+            <div class="form-group">
+                <label for="birthdate">Ingrese su fecha de nacimiento:</label>
+                <input type="date" id="birthdate" class="form-control" aria-label="Fecha de nacimiento">
+            </div>
+            <button onclick="calculateAge()" class="btn btn-primary btn-block">Calcular</button>
+        </div>
+    </div>
+
+    <div class="modal fade" id="resultModal" tabindex="-1" role="dialog" aria-labelledby="resultModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="resultModalLabel">Resultado</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="result"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary">Calcular nuevamente</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Edad</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="container d-flex justify-content-center align-items-center min-vh-100">
+        <div class="card p-4 shadow-lg border-light" style="max-width: 500px;">
+            <h1 class="card-title text-center mb-4">Calculadora de Edad</h1>
+            <p class="card-text text-center mb-4">Hecho para: Nicole Violeta</p>
+            <div class="form-group">
+                <label for="birthdate">Ingrese su fecha de nacimiento:</label>
+                <input type="date" id="birthdate" class="form-control" aria-label="Fecha de nacimiento">
+            </div>
+            <button onclick="calculateAge()" class="btn btn-primary btn-block">Calcular</button>
+        </div>
+    </div>
+
+    <div class="modal fade" id="resultModal" tabindex="-1" role="dialog" aria-labelledby="resultModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="resultModalLabel">Resultado</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="result"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" onclick="$('#resultModal').modal('hide')">Calcular nuevamente</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="script.js"></script>
+
+    
+</body>
+</html>
